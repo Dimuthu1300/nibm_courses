@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>NIBM Kandy Courses</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Google Font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top shadow">
+    <div class="container">
+
+      <a class="navbar-brand fw-bold" href="#">
+        NIBM Kandy
+      </a>
+
+      <button class="navbar-toggler bg-light" type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav">
+
+        <span class="navbar-toggler-icon"></span>
+
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#courses">Courses</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#intakes">Intakes</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+
+    <div class="container text-center">
+
+      <h1>
+        Discover Your Future at NIBM Kandy
+      </h1>
+
+      <p>
+        Explore industry-focused diploma and certificate programs.
+      </p>
+
+      <a href="#courses" class="btn btn-main">
+        Explore Courses
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+
+  <section class="py-5" id="about">
+
+    <div class="container">
+
+      <h2 class="text-center section-title">
+        About NIBM Kandy
+      </h2>
+
+      <div class="row align-items-center">
+
+        <div class="col-lg-6">
+
+          <img
+            src="images/Kandy_61859b1a54.jpg"
+            class="img-fluid rounded-4 shadow"
+          >
+
+        </div>
+
+        <div class="col-lg-6 mt-4 mt-lg-0">
+
+          <p class="lead">
+            Established in 1996, the Kandy Centre meets the growing demand in the Central Province of Sri Lanka 
+            through training programmes in both computer and management development studies. This Centre offers 
+            a wide range of IT and management programmes for more than 600 students at a time. This centre, equipped 
+            with modern computer labs and classroom facilities commands a panoramic view of Kandy including the Dalada Maligawa. 
+          </p>
+
+          <p>
+            Kandy is located at the strategic center of the island where anyone from different parts 
+            of the island could easily reach to pursue their higher educational aspirations. 
+            Kandy is also unique for its cultural and historical value embedded with the Temple of Tooth 
+            known as ‘Dalada Maligawa’ which has created a peaceful living for all the communities living 
+            in the region. Focusing on the concept of ‘Enterprising Hearts’ NIBM takes the initiative in 
+            empowering the learners with innovative mindsets enhancing their capability to ascend the 
+            career ladder with a broader vision. With a combination of three divisions, School of Business, 
+            School of Computing and School of Languages Kandy NIBM functions with a wide focus upholding 
+            innovative teaching methodologies, creating enterprising and competent graduates and opening 
+            diverse career paths with promising opportunities. The prime objective of Kandy NIBM is to 
+            produce skilled entrepreneurs who have the energy and determination to identify business 
+            opportunities and the drive to overcome the hurdles and possible pitfalls incorporating the 
+            language skills and technological expertise.
+          </p>
+
+          <p>
+            Kandy NIBM has marked its excellence in creating a novel educational sphere which is enriched 
+            with the best resources, skilled professionals and the wide variety of learning opportunities 
+            thus facilitating all the sectors and levels of the society ranging from school level to the 
+            professional level. Along with its uniqueness Kandy NIBM has distinguished itself as the dynamic 
+            platform which creates enterprising hearts.
+          </p>
+
+          <!--<div class="mt-4">
+
+            <p>
+              <i class="bi bi-check-circle-fill text-danger"></i>
+              Industry-Focused Programs
+            </p>
+
+            <p>
+              <i class="bi bi-check-circle-fill text-danger"></i>
+              Modern Learning Environment
+            </p>
+
+            <p>
+              <i class="bi bi-check-circle-fill text-danger"></i>
+              Experienced Lecturers
+            </p>
+
+          </div>-->
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- COURSES -->
+  <section class="py-5" id="courses">
+
+    <div class="container">
+
+      <h2 class="text-center section-title">
+        Our Courses
+      </h2>
+
+      <!-- SEARCH -->
+      <div class="row justify-content-center mb-4">
+
+        <div class="col-md-6">
+
+          <input
+            type="text"
+            id="searchInput"
+            class="form-control form-control-lg"
+            placeholder="Search courses..."
+          >
+
+        </div>
+
+      </div>
+
+      <!-- COURSE CONTAINER -->
+      <div class="row g-4" id="courseContainer"></div>
+
+    </div>
+
+  </section>
+
+  <!-- UPCOMING INTAKES -->
+  <section class="py-5 bg-light" id="intakes">
+
+    <div class="container">
+
+      <h2 class="text-center section-title">
+        Upcoming Intakes
+      </h2>
+
+      <div class="row g-4" id="intakeContainer"></div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section class="py-5 bg-light" id="contact">
+
+    <div class="container">
+
+      <h2 class="text-center section-title">
+        Contact Us
+      </h2>
+
+      <div class="row">
+
+        <div class="col-lg-6">
+
+          <form>
+
+            <div class="mb-3">
+
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Your Name"
+              >
+
+            </div>
+
+            <div class="mb-3">
+
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Email Address"
+              >
+
+            </div>
+
+            <div class="mb-3">
+
+              <textarea
+                class="form-control"
+                rows="5"
+                placeholder="Message"
+              ></textarea>
+
+            </div>
+
+            <button class="btn btn-main">
+              Send Message
+            </button>
+
+          </form>
+
+        </div>
+
+        <div class="col-lg-6 mt-4 mt-lg-0">
+
+          <div class="p-4 bg-white rounded-4 shadow-sm">
+
+            <h5 class="fw-bold">
+              NIBM Kandy
+            </h5>
+
+            <p>
+              <i class="bi bi-geo-alt-fill text-danger"></i>
+              Kandy, Sri Lanka
+            </p>
+
+            <p>
+              <i class="bi bi-telephone-fill text-danger"></i>
+              +94 81 123 4567
+            </p>
+
+            <p>
+              <i class="bi bi-envelope-fill text-danger"></i>
+              info@nibmkandy.lk
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="container text-center">
+
+      <h5 class="fw-bold">
+        NIBM Kandy
+      </h5>
+
+      <p>
+        Empowering students with future-ready education.
+      </p>
+
+      <div class="social-icons mb-3">
+
+        <a href="#">
+          <i class="bi bi-facebook"></i>
+        </a>
+
+        <a href="#">
+          <i class="bi bi-instagram"></i>
+        </a>
+
+        <a href="#">
+          <i class="bi bi-youtube"></i>
+        </a>
+
+      </div>
+
+      <small>
+        © 2026 NIBM Kandy. All Rights Reserved.
+      </small>
+
+    </div>
+
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script type="module" src="script.js"></script>
+
+</body>
+</html>
