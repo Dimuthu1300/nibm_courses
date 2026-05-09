@@ -1,5 +1,5 @@
 import { db }
-from "./firebase-config.js";
+from "./firebaseconfig.js";
 
 import {
   collection,
